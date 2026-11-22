@@ -9,25 +9,25 @@ CORS(app)
 ARQUIVO = "cadastro.json"
 
 def salvar(lista):
-    lista_aluno = []
+    lista_usuarios = []
 
     if os.path.exists(ARQUIVO):
         with open(ARQUIVO, "r") as a:
-            lista_aluno = json.load(a)
+            lista_usuarios = json.load(a)
 
-    lista_aluno.append(lista)
+    lista_usuarios.append(lista)
 
     with open(ARQUIVO, "w") as arquivo:
-        json.dump(lista_aluno, arquivo)
+        json.dump(lista_usuarios, arquivo)
 
 
-@app.route("/alunos", methods=["POST"])
+@app.route("/cadastro", methods=["POST"])
 
-def adicionar_aluno():
+def adicionar_usuario():
     dados = request.get_json()
 
     salvar(dados)
-    return jsonify({"mensagem": "Aluno salvo"}), 201 
+    return jsonify({"mensagem": "Usuario cadastrado"}), 201 
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)

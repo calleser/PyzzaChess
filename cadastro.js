@@ -32,8 +32,8 @@ async function cadastrar(){
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
-            js_username: username,
-            js_senha: senha
+            username: username,
+            senha: senha
         })
     })
 }
