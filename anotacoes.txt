@@ -1,0 +1,4 @@
+requisitos:
+
+-precisa ter html css js e python
+-pelo menos ter o cadastro de alguma coisa

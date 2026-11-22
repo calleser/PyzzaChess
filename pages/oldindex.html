@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js" defer></script>
+</head>
+<body>
+    <div class="container-player" id="player">
+        <img src="discofix.png" alt="Clique para tocar!" width="250" height="250" id="midia">
+    </div>
+    <audio id="musica" src="color-your-night.mp3" preload="auto"></audio>
+    <div class="tudo">
+        <div class="titulo">
+            <img src="hold_up.png" alt="Foto de exemplo" class="imagem">
+            <h1>Cadastro de personas</h1>
+        </div>
+        <div class="opcoes">
+            <div>
+                <h3 class="subtitulos">Nome Completo</h3>
+                <input class="login" type="text" id="nome" placeholder="João Pé de Feijão" onfocus="voltar('nome')">
+            </div>
+            <div>
+                <h3 class="subtitulos">Data de Nascimento</h3>
+                <input class="login" type="date" id="nascimento" placeholder="DD/MM/AAAA" onfocus="voltar('nascimento')">
+            </div>
+            <div>
+                <h3 class="subtitulos">CPF</h3>
+                <input class="login" type="number" id="cpf" placeholder="XXX.XXX.XXX-XX" onfocus="voltar('cpf')">
+            </div>
+            <div>
+                <h3 class="subtitulos">Sexo</h3>
+                <input class="login" type="text" id="sexo" placeholder="Masc/Fem/Outro" onfocus="voltar('sexo')">
+            </div>
+            <div>
+                <button class="login" onclick="verificar()">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

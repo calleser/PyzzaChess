@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>PyzzaChess | Home</title>
+        <script src="../cadastro.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="page-title">PyzzaChess</h1>
+        </header>
+
+        <nav aria-label="Main navigation">
+            
+            <ul>
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="game.html" >Play</a></li>
+            </ul>
+
+        </nav>
+
+        <main>
+            <section id="introduction">
+
+                <h2>Xadrez? Pizza? Por quê?</h2>
+                <p>Porque até quando é ruim, ainda assim é bom!</p>
+                <p>Se você jogar mal ou se a pizza vier meio fria, você ainda aproveita o momento. A diferença é que ninguém chora quando a borda de catupiry é sacrificada no começo do jogo.</p>
+                
+                
+                <p>Click <a href="about.html" >here</a> for the full content page of the website and how to play chess.</p>
+
+                <img src="../assets/chess-air.png" alt="chess board">
+            </section>
+            
+            <section id="register">
+                <h2>Registro de conta</h2>
+
+                <div class="opcoes">
+
+                    <div>
+                        <h3 class="subtitulos">Username</h3>
+                        <input class="login" type="text" id="username" placeholder="Adicionar username..." onfocus="voltar('username')">
+                    </div>
+
+                    <div>
+                        <h3 class="subtitulos">Senha</h3>
+                        <input class="login" type="text" id="senha" placeholder="Adicionar senha forte..." onfocus="voltar('senha')">
+                    </div>
+                    <div>
+                        <button class="login" onclick="verificar()">Cadastrar-se</button>
+                </div>
+
+            </section>
+
+
+        </main>
+
+        <footer>
+
+            <p>&copy; 2025 calleser. All rights reserved.</p>
+
+        </footer>
+
+    </body>
+
+</html>

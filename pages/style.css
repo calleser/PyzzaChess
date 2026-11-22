@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilo geral para o corpo da página */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Uma fonte moderna e limpa */
+    background-color: #DBA87F; /* Um fundo azul acinzentado bem suave */
+    color: #333a40; /* Cor de texto principal (cinza escuro azulado) */
+}
+
+main {
+    width: 80%; /* O conteúdo principal ocupará 80% da largura do seu pai (o body) */
+    max-width: 900px; /* Mas não passará de 900 pixels de largura */
+    margin-left: auto; /* Truque para centralizar elementos de bloco com largura definida */
+    margin-right: auto; /* Truque para centralizar elementos de bloco com largura definida */
+    background-color: #F5AC3F; /* Dando um fundo branco para o conteúdo principal */
+    padding: 20px; /* Um espaçamento interno (veremos padding em detalhes depois) */
+}
+
+/* Estilizando o cabeçalho da página */
+header {
+    background-color: #FF6106; /* Um azul vibrante para o cabeçalho */
+    color: white; /* Texto branco no cabeçalho */
+    text-align: center; /* Centraliza o conteúdo do header */
+}
+
+/* Estilizando o título principal dentro do header */
+header h1 {
+    font-size: 36px; /* Tamanho grande para o título */
+    font-weight: bold; /* Garante que seja negrito */
+    color: white; /* A cor é especificada novamente para garantir a sobreposição de estilos mais gerais. Esta é uma prática de especificidade, um conceito que será explorado em mais detalhes futuramente. */
+}
+
+nav a {
+    color: black;
+}
+
+a:hover {
+    color: grey;
+}
+
+/* Estilizando os títulos de seção (h2) */
+h2 {
+    color: #D63E12; /* Um tom de azul mais escuro para subtítulos */
+    font-size: 28px;
+    font-weight: normal; /* Títulos h2 já são negrito por padrão, aqui um exemplo de como 'normalizar' se necessário */
+}
+
+h3 {
+    color: #000000; /* Um tom de azul mais escuro para subtítulos */
+    font-weight: normal; /* Títulos h2 já são negrito por padrão, aqui um exemplo de como 'normalizar' se necessário */
+}
+
+/* Estilos para parágrafos e itens de lista (li) */
+p, li { 
+    font-size: 17px; /* Tamanho de texto confortável para leitura */
+}
+
+/* Estilizando o rodapé */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #555c63; /* Cinza para o texto do rodapé */
+}
+
+/* Estilizando links dentro do rodapé */
+footer a { /* Estiliza apenas os links 'a' que estão dentro do 'footer' */
+    color: #580f19; /* Mesma cor azul do header para os links */
+    font-weight: bold;
+}
+
+#chess-icon{
+    max-width: 150px;
+    width: auto;
+}
+
+#page-title{
+    padding-bottom: 10px; /* Adiciona um espaço abaixo do texto do título */
+    border-bottom: 3px dotted #D63E12; /* Adiciona uma borda pontilhada amarela abaixo */
+}
