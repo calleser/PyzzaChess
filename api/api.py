@@ -31,13 +31,9 @@ def adicionar_usuario():
     salvar(dados)
     return jsonify({"mensagem": "Usuario cadastrado"}), 201 
 
-if __name__ == "__main__":
-    app.run(debug=True, port=5000)
-
-# parte do chess:
-
 @app.route("/jogo", methods=["GET"])
 def ver_jogo():
+    return jsonify({"fen": tabuleiro.fen()})
     # TODO: devolver o FEN do tabuleiro num jsonify
 
 @app.route("/jogo/mover", methods=["POST"])
@@ -46,3 +42,7 @@ def mover():
     # TODO: montar o lance com origem + destino
     # TODO: se for válido -> push e devolver o FEN novo
     # TODO: se não for -> devolver um erro com status 400
+
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)

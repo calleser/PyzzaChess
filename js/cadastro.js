@@ -1,7 +1,7 @@
 id_username = document.getElementById("username")
 id_senha = document.getElementById("senha")
 
-const API_URL = "http://127.0.0.1:5000/alunos"
+const API_URL = "http://127.0.0.1:5000/cadastro"
 
 function verificar(){
     username = id_username.value
@@ -40,23 +40,6 @@ async function cadastrar(){
 
 function voltar(id){
     document.getElementById(id).style.backgroundColor = "white"
-}
-
-// parte do chess
-
-async function carregar() {
-    // TODO: fetch na rota /jogo
-
-    await fetch(API_URL, {
-        method: "POST",
-        headers: {"Content-Type:" "application/json"},
-        body: JSON.stringify({
-            board: "todo"
-        })
-    })
-
-    // TODO: transformar a resposta em objeto
-    // TODO: chamar desenhar() passando o fen
 }
 
 function desenhar(fen) {
