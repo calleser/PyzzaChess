@@ -41,3 +41,30 @@ async function cadastrar(){
 function voltar(id){
     document.getElementById(id).style.backgroundColor = "white"
 }
+
+// parte do chess
+
+async function carregar() {
+    // TODO: fetch na rota /jogo
+
+    await fetch(API_URL, {
+        method: "POST",
+        headers: {"Content-Type:" "application/json"},
+        body: JSON.stringify({
+            board: "todo"
+        })
+    })
+
+    // TODO: transformar a resposta em objeto
+    // TODO: chamar desenhar() passando o fen
+}
+
+function desenhar(fen) {
+    // TODO: transformar o FEN em matriz 8x8
+    // TODO: laço duplo criando 64 divs dentro de #tabuleiro
+}
+
+async function mover(origem, destino) {
+    // TODO: fetch POST pra /jogo/mover com {origem, destino} no body
+    // TODO: se deu certo, redesenhar; se não, mostrar o erro
+}

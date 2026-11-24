@@ -2,7 +2,9 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import json
 import os
+import chess
 
+tabuleiro = chess.Board()
 app = Flask(__name__)
 CORS(app)
 
@@ -31,3 +33,16 @@ def adicionar_usuario():
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
+
+# parte do chess:
+
+@app.route("/jogo", methods=["GET"])
+def ver_jogo():
+    # TODO: devolver o FEN do tabuleiro num jsonify
+
+@app.route("/jogo/mover", methods=["POST"])
+def mover():
+    dados = request.get_json()
+    # TODO: montar o lance com origem + destino
+    # TODO: se for válido -> push e devolver o FEN novo
+    # TODO: se não for -> devolver um erro com status 400
